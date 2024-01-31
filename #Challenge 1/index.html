@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Social Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <h2>Facebook</h2>
+      </div>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="search for creators and projects">
+      </div>
+      <div class="create">
+        <label for="create-post" class="btn btn-primary">Create</label>
+        <div class="profile-photo">
+          <img src="./images/my-profile-photo.jpg">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- =================MAIN================== -->
+  <main>
+    <div class="container">
+      <!-- =================LEFT================== -->
+    <div class="left">
+      <a class="profile">
+        <div class="profile-photo">
+          <img src="./images/my-profile-photo.jpg">
+        </div>
+        <div class="name">
+          <h4>Usman Warraich</h4>
+          <p class="text-muted">@usman</p>
+        </div>
+      </a>
+      <!-- ============SIDEBAR============== -->
+      <div class="sidebar">
+        <div class="sidebar-items active">
+          <a>
+            <i class="fa-solid fa-house"></i>
+            <h4>Home</h4>
+          </a>
+        </div>
+        <div class="sidebar-items">
+          <a>
+            <i class="fa-solid fa-compass"></i>
+            <h4>Explore</h4>
+          </a>
+        </div>
+        <div class="sidebar-items">
+          <a id="notification-popup">
+            <i class="fa-solid fa-bell"> <p class="notification-count">9+</p></i>
+            <h4 id="ntifcation">Notification</h4>
+<!-- ==================NOTIFICATION-POPPUP=================== -->
+            <div class="notification-poppup">
+              <div>
+                <div class="profile-photo">
+                  <img src="./images/post.jpg">
+                </div>
+                <div>
+                  <b>Usman Warraich</b>accept your friend request <p class="text-muted">2 DAYS AGO</p>
+                </div>
+              </div>
+              <div>
+                <div class="profile-photo">
+                  <img src="./images/mani (2).jpg">
+                </div>
+                <div>
+                  <b>Abdul Rahman</b>comment on your post <p class="text-muted">20 MINTS AGO</p>
+                </div>
+              </div>
+              <div>
+                <div class="profile-photo">
+                  <img src="./images/3.jpg">
+                </div>
+                <div>
+                  <b>Jone Doe</b>and 400 others liked your post <p class="text-muted">2 HOURS AGO</p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-3 (2).jpg">
+                  </div>
+                </div>
+                <div>
+                  <b>Donoled Trump</b>commented on a post that you are tagged in <p class="text-muted">30 MINTS AGO</p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/profile-4 (2).jpg">
+                  </div>
+                </div>
+                <div>
+                  <b>Sophia Watson</b>posted in <b>Javascript Develpoers</b> in sunday <p class="text-muted">2 APR AT 18:30</p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./images/mani (2).jpg">
+                  </div>
+                </div>   
+                <div>
+                  <b>Abdul Rahman</b>commented on a post that you are tagged in <p class="text-muted">4 DAYS AGO</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="sidebar-items">
+          <a>
+            <i class="fa-solid fa-envelope"><p class="notification-count">6</p></i>
+            <h4>Massages</h4>
+          </a>
+        </div>
+        <div class="sidebar-items">
+          <a>
+            <i class="fa-solid fa-bookmark"></i>
+            <h4>Bookmarks</h4>
+          </a>
+        </div>
+        <div class="sidebar-items">
+          <a>
+            <i class="fa-solid fa-chart-line"></i>
+            <h4>Analytics</h4>
+          </a>
+        </div>
+        <div class="sidebar-items">
+          <a id="theme">
+            <i class="fa-solid fa-palette"></i>
+            <h4>Theme</h4>
+          </a>
+        </div>
+        <div class="sidebar-items">
+          <a>
+            <i class="fa-solid fa-gear"></i>
+            <h4>Settings</h4>
+          </a>
+        </div>
+      </div>
+      <label for="create-post" class="btn btn-primary">Create Post</label>
+    </div>
+      <!-- =================END OF LEFT SIDE================== -->
+
+      <!-- =================MIDDLE================== -->
+    <div class="middle">
+      <!-- =================STORIES================== -->
+      <div class="stories">
+        <div class="story">
+          <div class="profile-photo">
+            <img src="./images/my-profile-photo.jpg">
+          </div>
+          <div class="story-name">
+            <p>your story</p>
+          </div>
+        </div>
+        <div class="story">
+          <div class="profile-photo">
+            <img src="./images/mani (2).jpg">
+          </div>
+          <div class="story-name">
+            <p>Abdul Rahman</p>
+          </div>
+        </div>
+        <div class="story">
+          <div class="profile-photo">
+            <img src="./images/3.jpg">
+          </div>
+          <div class="story-name">
+            <p>Jone Deo</p>
+          </div>
+        </div>
+        <div class="story">
+          <div class="profile-photo">
+            <img src="./images/profile-3 (2).jpg">
+          </div>
+          <div class="story-name">
+            <p>Trump</p>
+          </div>
+        </div>
+        <div class="story">
+          <div class="profile-photo">
+            <img src="./images/profile-4 (2).jpg">
+          </div>
+          <div class="story-name">
+            <p>Sophia</p>
+          </div>
+        </div>
+        <div class="story">
+          <div class="profile-photo">
+            <img src="./images/post.jpg">
+          </div>
+          <div class="story-name">
+            <p>Usman</p>
+          </div>
+        </div>
+      </div>
+      <!-- =================END OF STORIES================== -->
+      <form class="create-post">
+        <div class="profile-photo">
+          <img src="./images/my-profile-photo.jpg">
+        </div>
+        <input type="text" placeholder="what's on your mind, Usman?" id="create-post">
+        <input type="submit" value="post" class="btn btn-primary">
+      </form>
+      <!-- ===========FEEDS============= -->
+      <div class="feeds">
+        <div class="feed">
+          <div class="head">
+            <div class="user">
+              <div class="profile-photo">
+                <img src="./images/post.jpg">
+              </div>
+              <div class="name">
+                <h3>Usman Warraich</h3>
+                <p class="text-muted">
+                  Lahore, 15 MINUTS AGO
+                </p>
+              </div>
+            </div>
+            <span><i class="fa-solid fa-ellipsis"></i></span>
+          </div>
+          <div class="photo">
+            <img src="./images/feed1.jpg">
+          </div>
+          <div class="icons">
+            <div class="icon">
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-regular fa-comment-dots"></i></span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+            <span><i class="fa-regular fa-bookmark"></i></span>
+          </div>
+          <div class="liked-by">
+            <div class="img">
+              <div class="profile-photo">
+                <img src="./images/mani (2).jpg" >
+              </div>
+              <div class="profile-photo">
+                <img src="./images/profile-3 (2).jpg" >
+              </div>
+              <div class="profile-photo">
+                <img src="./images/my-profile-photo.jpg" >
+              </div>
+              <p>liked by <b>Abdul Rahman</b> and <b>2,003</b> others</p>
+            </div>
+            <p><b>Usman</b>Lorem ipsum dolor sit amet.#lifestyle</p>
+            <p class="text-muted">view all 400 comments</p>
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="head">
+            <div class="user">
+              <div class="profile-photo">
+                <img src="./images/my-profile-photo.jpg">
+              </div>
+              <div class="name">
+                <h3>Usman Warraich</h3>
+                <p class="text-muted">
+                  Lahore, 30 MINUTS AGO
+                </p>
+              </div>
+            </div>
+            <span><i class="fa-solid fa-ellipsis"></i></span>
+          </div>
+          <div class="photo">
+            <img src="./images/post-3.jpg">
+          </div>
+          <div class="icons">
+            <div class="icon">
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-regular fa-comment-dots"></i></span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+            <span><i class="fa-regular fa-bookmark"></i></span>
+          </div>
+          <div class="liked-by">
+            <div class="img">
+              <div class="profile-photo">
+                <img src="./images/mani (2).jpg" >
+              </div>
+              <div class="profile-photo">
+                <img src="./images/profile-3 (2).jpg" >
+              </div>
+              <div class="profile-photo">
+                <img src="./images/my-profile-photo.jpg" >
+              </div>
+              <p>liked by <b>Abdul Rahman</b> and <b>2,603</b> others</p>
+            </div>
+            <p><b>Usman</b>Lorem ipsum dolor sit amet.#lifestyle</p>
+            <p class="text-muted">view all 600 comments</p>
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="head">
+            <div class="user">
+              <div class="profile-photo">
+                <img src="./images/profile-4 (2).jpg">
+              </div>
+              <div class="name">
+                <h3>Sophia Watson</h3>
+                <p class="text-muted">
+                  New York, 1 HOUR AGO
+                </p>
+              </div>
+            </div>
+            <span><i class="fa-solid fa-ellipsis"></i></span>
+          </div>
+          <div class="photo">
+            <img src="./images/feed3.webp">
+          </div>
+          <div class="icons">
+            <div class="icon">
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-regular fa-comment-dots"></i></span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+            <span><i class="fa-regular fa-bookmark"></i></span>
+          </div>
+          <div class="liked-by">
+            <div class="img">
+              <div class="profile-photo">
+                <img src="./images/mani (2).jpg" >
+              </div>
+              <div class="profile-photo">
+                <img src="./images/profile-3 (2).jpg" >
+              </div>
+              <div class="profile-photo">
+                <img src="./images/my-profile-photo.jpg" >
+              </div>
+              <p>liked by <b>Jone Doe</b> and <b>1,003</b> others</p>
+            </div>
+            <p><b>Sophia</b>Lorem ipsum dolor sit amet.#lifestyle</p>
+            <p class="text-muted">view all 400 comments</p>
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="head">
+            <div class="user">
+              <div class="profile-photo">
+                <img src="./images/profile-3 (2).jpg">
+              </div>
+              <div class="name">
+                <h3>Downlan Trump</h3>
+                <p class="text-muted">
+                  Dubai, 1 DAY AGO
+                </p>
+              </div>
+            </div>
+            <span><i class="fa-solid fa-ellipsis"></i></span>
+          </div>
+          <div class="photo">
+            <img src="./images/feed2.jpg">
+          </div>
+          <div class="icons">
+            <div class="icon">
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-regular fa-comment-dots"></i></span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+            <span><i class="fa-regular fa-bookmark"></i></span>
+          </div>
+          <div class="liked-by">
+            <div class="img">
+              <div class="profile-photo">
+                <img src="./images/mani (2).jpg" >
+              </div>
+              <div class="profile-photo">
+                <img src="./images/profile-3 (2).jpg" >
+              </div>
+              <div class="profile-photo">
+                <img src="./images/my-profile-photo.jpg" >
+              </div>
+              <p>liked by <b>Shopia</b> and <b>203</b> others</p>
+            </div>
+            <p><b>Trump</b>Lorem ipsum dolor sit amet.#lifestyle</p>
+            <p class="text-muted">view all 40 comments</p>
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="head">
+            <div class="user">
+              <div class="profile-photo">
+                <img src="./images/mani (2).jpg">
+              </div>
+              <div class="name">
+                <h3>Abdul Rahman</h3>
+                <p class="text-muted">
+                  Lahore, 2 DAYS AGO
+                </p>
+              </div>
+            </div>
+            <span><i class="fa-solid fa-ellipsis"></i></span>
+          </div>
+          <div class="photo">
+            <img src="./images/mani.jpg">
+          </div>
+          <div class="icons">
+            <div class="icon">
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-regular fa-comment-dots"></i></span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+            <span><i class="fa-regular fa-bookmark"></i></span>
+          </div>
+          <div class="liked-by">
+            <div class="img">
+              <div class="profile-photo">
+                <img src="./images/mani (2).jpg" >
+              </div>
+              <div class="profile-photo">
+                <img src="./images/profile-3 (2).jpg" >
+              </div>
+              <div class="profile-photo">
+                <img src="./images/my-profile-photo.jpg" >
+              </div>
+              <p>liked by <b>Usman Warraich</b> and <b>2,003</b> others</p>
+            </div>
+            <p><b>Abdul Rahman</b>Lorem ipsum dolor sit amet.#lifestyle</p>
+            <p class="text-muted">view all 400 comments</p>
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="head">
+            <div class="user">
+              <div class="profile-photo">
+                <img src="./images/post.jpg">
+              </div>
+              <div class="name">
+                <h3>Usman Warraich</h3>
+                <p class="text-muted">
+                  Punjab, 15 DAYS AGO
+                </p>
+              </div>
+            </div>
+            <span><i class="fa-solid fa-ellipsis"></i></span>
+          </div>
+          <div class="photo">
+            <img src="./images/feed-2.jpg">
+          </div>
+          <div class="icons">
+            <div class="icon">
+              <span><i class="fa-regular fa-heart"></i></span>
+              <span><i class="fa-regular fa-comment-dots"></i></span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+            <span><i class="fa-regular fa-bookmark"></i></span>
+          </div>
+          <div class="liked-by">
+            <div class="img">
+              <div class="profile-photo">
+                <img src="./images/mani (2).jpg" >
+              </div>
+              <div class="profile-photo">
+                <img src="./images/profile-3 (2).jpg" >
+              </div>
+              <div class="profile-photo">
+                <img src="./images/my-profile-photo.jpg" >
+              </div>
+              <p>liked by <b>Abdul Rahman</b> and <b>1,003</b> others</p>
+            </div>
+            <p><b>Usman</b>Lorem ipsum dolor sit amet.#lifestyle</p>
+            <p class="text-muted">view all 400 comments</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- =================RIGHT================== -->
+    <div class="right">
+            <!-- =================MESSAGES================== -->
+      <div class="messages">
+        <div class="heading">
+          <h4>Messages</h4>
+          <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="search for messages">
+        </div>
+        <div class="category">
+          <h4 class="active">Primery</h4>
+          <h4>General</h4>
+          <h4 class="active-msg">Requests(7)</h4>
+        </div>
+        <div class="message">
+          <a class="profile">
+            <div class="profile-photo">
+              <img src="./images/th (1).jpg">
+            </div>
+            <div class="name">
+              <h4>Jeson Roy</h4>
+              <p class="text-muted">Hi! usman</p>
+            </div>
+          </a>
+          <a class="profile">
+            <div class="profile-photo">
+              <img src="./images/th (2).jpg">
+              <p class="active"></p>
+            </div>
+            <div class="name">
+              <h4>Buttler</h4>
+              <p class="text-muted">Recived burh. Thanks</p>
+            </div>
+          </a>
+          <a class="profile">
+            <div class="profile-photo">
+              <img src="./images/th (3).jpg">
+            </div>
+            <div class="name">
+              <h4>M Akmal</h4>
+              <p class="text-muted">Ok</p>
+            </div>
+          </a>
+          <a class="profile">
+            <div class="profile-photo">
+              <img src="./images/2.jpg">
+            </div>
+            <div class="name">
+              <h4>Ali Ahmad</h4>
+              <p class="text-muted">2new message</p>
+            </div>
+          </a>
+          <a class="profile">
+            <div class="profile-photo">
+              <img src="./images/3.jpg">
+              <p class="active"></p>
+            </div>
+            <div class="name">
+              <h4>Rahman Ali</h4>
+              <p class="text-muted">Birthday Towmorrow!</p>
+            </div>
+          </a>
+          <a class="profile">
+            <div class="profile-photo">
+              <img src="./images/mani (2).jpg">
+            </div>
+            <div class="name">
+              <h4>Mani</h4>
+              <p class="text-muted">Hi! usman</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    <!-- =================END OF MESSAGES================== -->
+
+            <!-- =================REQUESTS================== -->
+      <div class="requests">
+        <h4 class="text-muted"> Requests</h4>
+        <div class="request">
+          <div class="request-info">
+            <div class="profile-photo">
+              <img src="./images/th (4).jpg">
+            </div>
+            <div class="info">
+              <p class="text-muted"><b class="text-bold">Dylan</b> <br> 20 mutural friends</p>
+            </div>
+          </div>
+          <div class="buttons">
+            <label class="btn btn-primary">Accept!</label>
+              <label class="btn-1 ">Decline!</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+ <!-- ===================================================="COSTOMIZATION COLOR"============================================================= -->
+  <div class="costomize-theme">
+    <i class="fa-solid fa-xmark" id="exit"></i>
+    <div class="card">
+        <h2>Customize Your view </h2>
+      <p class="text-muted">
+        Manage your font size, Color, and Background.
+      </p>
+      
+      <!-- =========FONT SIZE========== -->
+      <div class="font-size">
+        <h4>Font size</h4>
+        <div>
+          <h6>Aa</h6>
+          <div class="choose-size">
+            <span class="font-size-1"></span>
+            <span class="font-size-2 active"></span>
+            <span class="font-size-3"></span>
+            <span class="font-size-4"></span>
+            <span class="font-size-5"></span>
+          </div>
+          <h3>Aa</h3>
+        </div>
+      </div>
+         <!-- =========COLOR========== -->
+      <div class="color">
+        <h4>Choose Color</h4>
+        <div class="choose-color">
+          <span class="color-1 active"></span>
+          <span class="color-2"></span>
+          <span class="color-3"></span>
+          <span class="color-4"></span>
+          <span class="color-5"></span>
+        </div>
+      </div> 
+      <!-- ======BACKGROUND======= -->
+      <div class="background">
+        <h4>Background</h4>
+        <div class="choose-bg">
+          <div class="bg-1 active">
+            <span></span>
+            <h5 for="gb-1">Light</h5>
+          </div>
+          <div class="bg-2" id="bg2">
+            <span></span>
+            <h5 for="gb-2">Dim</h5>
+          </div>
+          <div class="bg-3">
+            <span></span>
+            <h5 for="gb-3">Light Out</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+
+  <!-- ===========JAVASCRIPT OR JQUERY CODE============= -->
+   <script src="./script.js">
+   </script>
+</body>
+</html>

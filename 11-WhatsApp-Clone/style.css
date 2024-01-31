@@ -1,0 +1,601 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(35, 36, 36);
+  color: rgb(239, 236, 236);
+  position: relative;
+}
+
+/* MAIN  LAYOUT */
+
+.layout {
+  width: 100%;
+  height: 100vh;
+  
+}
+/* LEFT SIDE */
+
+.left-side {
+  float: left;
+  width: 30%;
+  border-right: 1px solid rgb(195, 191, 191);
+  background: transparent;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 8vh;
+  background-color: rgb(62, 62, 59);
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.img  {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icons i {
+  cursor: pointer;
+  font-size: 18px;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  justify-content: space-around;
+}
+.search {
+  background-color: rgb(62, 62, 59);
+  margin: 10px;
+  border-radius: 4px;
+}
+.search input {
+  border: 0;
+  /* padding: 10px; */
+  font-size: 14px;
+  outline: 0;
+  background: transparent;
+  padding: 10px;
+  width: 80%;
+}
+.search i {
+  background: transparent;
+}
+.horizantal-line {
+  height: 1px;
+  width: auto;
+  background-color: rgb(195, 191, 191);
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+
+.peoples {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: transparent;
+}
+.people {
+  display: flex;
+  background: transparent;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+
+
+.contant {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: transparent;
+  margin-left: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+.count {
+  display: flex;
+  flex-direction: column;
+}
+nav div:first-child {
+  display: flex;
+  flex-direction: row;
+}
+nav div {
+  background-color: rgb(62, 62, 59);
+}
+nav .text {
+  margin-left: 20px;
+  /* background: transparent; */
+}
+.text p {
+  background: transparent;
+}
+.time {
+  background: transparent;
+}
+nav i {
+  background-color: rgb(62, 62, 59);
+  font-size: 14px;
+  padding: 10px;
+}
+
+
+
+
+/* RIGHT SIDE */
+
+.right-side .text p {
+  background-color: rgb(62, 62, 59);
+
+}
+.right-side {
+  float: right;
+  width: 70%;
+  /* position: relative; */
+}
+
+/* CHAT BOX */
+.chat-box {
+  position: relative;
+  padding: 20px 100px;
+  letter-spacing: normal;
+}
+.send {
+  background-color: rgb(21, 173, 74);
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  /* position: absolute; */
+  width: 500px;
+  float: right;
+  position: relative;
+}
+.send::after {
+  content: "";
+  float: right;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  margin-right: -14px;
+  background-color: rgb(21, 173, 74);
+  position: absolute;
+  border-top-right-radius: 350px;
+  border-bottom-right-radius: 0px;
+}
+.send p {
+  background-color: rgb(21, 173, 74);
+}
+.send .time {
+  float: right;
+  color: #b6b2b2;
+}
+.recive .time {
+  float: right;
+  color: #b6b2b2;
+}
+.recive {
+  background-color: rgb(62, 62, 59);
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  /* position: absolute; */
+  width: 500px;
+  margin: 20px 0;
+  float: left;
+  position: relative;
+}
+.recive::after {
+  content: "";
+  float: left;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  margin-left: -14px;
+  background-color: rgb(62, 62, 59);
+  position: absolute;
+  border-top-left-radius: 350px;
+  border-bottom-left-radius: 0px;
+}
+.recive p {
+  background-color: rgb(62, 62, 59);
+}
+/* FOOTER */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  /* height: 8vh; */
+  width: 100%;
+  background-color: rgb(62, 62, 59);
+  /* position: absolute; */
+  bottom: 0;
+  padding: 20px;
+}
+.footer input {
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  width: 90%;
+  letter-spacing: 3px;
+  outline: 0;
+}
+.footer i {
+  font-size: 19px;
+  background-color: rgb(62, 62, 59);
+}
+
+/* MEDIA QUERIES... */
+
+
+/* LAPTOPS */
+@media (width: 1024px) {
+  .chat-box {
+    position: relative;
+    padding: 20px 50px;
+    letter-spacing: normal;
+  }
+  .send {
+    background-color: rgb(21, 173, 74);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    /* position: absolute; */
+    width: 350px;
+    float: right;
+    position: relative;
+  }
+  .recive {
+    background-color: rgb(62, 62, 59);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    /* position: absolute; */
+    width: 350px;
+    margin: 20px 0;
+    float: left;
+    position: relative;
+  }
+  .time {
+    display: block;
+  }
+}
+/* TABLETS */
+@media (width: 768px) {
+  .chat-box {
+    position: relative;
+    padding: 20px 70px;
+    letter-spacing: normal;
+  }
+  .send {
+    background-color: rgb(21, 173, 74);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    /* position: absolute; */
+    width: 350px;
+    float: right;
+    position: relative;
+  }
+  .recive {
+    background-color: rgb(62, 62, 59);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    /* position: absolute; */
+    width: 350px;
+    margin: 20px 0;
+    float: left;
+    position: relative;
+  }
+  .time {
+    display: block;
+  }
+}
+/* L MOBILE */
+@media (max-width: 425px),(min-width: 375) {
+  .chat-box {
+    position: relative;
+    padding: 10px 30px;
+    letter-spacing: normal;
+    height: 82vh;
+  }
+  .send::after {
+    display: none;
+  }
+  .recive::after {
+    display: none;
+  }
+  .send {
+    background-color: rgb(21, 173, 74);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    /* position: absolute; */
+    width: 200px;
+    float: right;
+    position: relative;
+  }
+  .recive {
+    background-color: rgb(62, 62, 59);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    /* position: absolute; */
+    width: 200px;
+    margin: 10px 0;
+    float: left;
+    position: relative;
+  }
+  .time {
+    display: none;
+  }
+  .contant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;
+    width: 60%;
+    font-size: 12px;
+  }
+  .left-side {
+    width: 35%;
+  }
+  .right-side {
+    width: 65%;
+  }
+  .icons {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 7vh;
+    background-color: rgb(62, 62, 59);
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  img  {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    /* height: 8vh; */
+    width: 100%;
+    background-color: rgb(62, 62, 59);
+    /* position: absolute; */
+    bottom: 0;
+    padding: 10 20px;
+  }
+  .footer input {
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    width: 80%;
+    letter-spacing: 3px;
+    outline: 0;
+  }
+}
+/* M MOBILE */
+@media (width: 375px) {
+   
+  .chat-box {
+    position: relative;
+    padding: 20px 10px;
+    letter-spacing: normal;
+    height: 85vh;
+  }
+  .send::after {
+    display: none;
+  }
+  .recive::after {
+    display: none;
+  }
+  .send {
+    background-color: rgb(21, 173, 74);
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    /* position: absolute; */
+    width: 150px;
+    float: right;
+    position: relative;
+  }
+  .recive {
+    background-color: rgb(62, 62, 59);
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    /* position: absolute; */
+    width: 150px;
+    margin: 10px 0;
+    float: left;
+    position: relative;
+  }
+  .time {
+    display: none;
+  }
+  .contant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;
+    width: 40%;
+    font-size: 12px;
+  }
+  .left-side {
+    width: 40%;
+  }
+  .right-side {
+    width: 60%;
+  }
+  .icons {
+    display: none;
+  }
+  .horizantal-line {
+    width: 100%;
+  }
+  .send::after {
+    display: none;
+  }
+  .recive::after {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 7vh;
+    background-color: rgb(62, 62, 59);
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  img  {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    /* height: 8vh; */
+    width: 100%;
+    background-color: rgb(62, 62, 59);
+    /* position: absolute; */
+    bottom: 0;
+    padding: 10px;
+  }
+  .footer input {
+    border: 0;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    width: 70%;
+    letter-spacing: 3px;
+    outline: 0;
+  }
+}
+/* S MOBILE */
+@media (width: 320px) {
+  .chat-box {
+    position: relative;
+    padding: 20px 10px;
+    letter-spacing: normal;
+    height: 85vh;
+  }
+  .send {
+    background-color: rgb(21, 173, 74);
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    /* position: absolute; */
+    width: 150px;
+    float: right;
+    position: relative;
+  }
+  .recive {
+    background-color: rgb(62, 62, 59);
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    /* position: absolute; */
+    width: 150px;
+    margin: 10px 0;
+    float: left;
+    position: relative;
+  }
+  .time {
+    display: none;
+  }
+  .contant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;
+    width: 40%;
+    font-size: 12px;
+  }
+  .left-side {
+    width: 40%;
+  }
+  .right-side {
+    width: 60%;
+  }
+  .icons {
+    display: none;
+  }
+  .horizantal-line {
+    width: 100%;
+  }
+  .send::after {
+    display: none;
+  }
+  .recive::after {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 7vh;
+    background-color: rgb(62, 62, 59);
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  img  {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    /* height: 8vh; */
+    width: 100%;
+    background-color: rgb(62, 62, 59);
+    /* position: absolute; */
+    bottom: 0;
+    padding: 10px;
+  }
+  .footer input {
+    border: 0;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    width: 70%;
+    letter-spacing: 3px;
+    outline: 0;
+  }
+}
