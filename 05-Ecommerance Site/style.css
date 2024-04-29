@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@1,300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 
 h1 {
@@ -30,7 +30,7 @@ p {
   color: #465b52;
 }
 .section-p1 {
- padding: 40px 80px;
+  padding: 40px 80px;
 }
 .section-m1 {
   margin: 40px 0;
@@ -140,7 +140,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 #header {
-  background-image: url('./img/hero4.png');
+  background-image: url("./img/hero4.png");
   background-position: top 25% right 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -179,11 +179,11 @@ nav ul li a:hover {
   text-align: center;
   border-radius: 4px;
   padding: 20px;
-  box-shadow: 1px 1px 1px 1px  rgba(70, 62, 221, 0.1);
+  box-shadow: 1px 1px 1px 1px rgba(70, 62, 221, 0.1);
   width: 180px;
 }
 #feature .fe-box:hover {
-  box-shadow: 3px 4px 11px 12px  rgba(70, 62, 221, 0.1);
+  box-shadow: 3px 4px 11px 12px rgba(70, 62, 221, 0.1);
 }
 #feature .fe-box img {
   width: 100%;
@@ -212,7 +212,6 @@ nav ul li a:hover {
 }
 #products {
   text-align: center;
-
 }
 #products .pro-container {
   display: flex;
@@ -228,7 +227,7 @@ nav ul li a:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
 }
 #products .pro:hover {
-  box-shadow: 4px 6px 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 4px 6px 4px 6px rgba(0, 0, 0, 0.1);
 }
 .pro-container img {
   width: 100%;
@@ -398,7 +397,6 @@ nav ul li a:hover {
 .news-text p span {
   color: #ffbd27;
   font-size: bold;
-
 }
 .form {
   display: flex;
@@ -426,6 +424,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
 }
+
 footer .col-1 {
   display: flex;
   flex-direction: column;
@@ -462,7 +461,6 @@ footer .col-1 {
   color: #465b52;
   font-size: 16px;
   cursor: pointer;
-
 }
 .col-3 h4 {
   font-size: 22px;
@@ -476,7 +474,8 @@ footer .col-1 {
   font-size: 16px;
   cursor: pointer;
 }
-.col-2 li:hover, .col-3 li:hover {
+.col-2 li:hover,
+.col-3 li:hover {
   color: #088178;
 }
 .col-4 h4 {
@@ -506,87 +505,87 @@ footer p {
 .my-name:hover {
   color: #088178;
   font-size: 20px;
-  transition: 100ms;
+  transition: 300ms;
   cursor: pointer;
 }
 
 @media (max-width: 900px) {
   .section-p1 {
     padding: 30px 60px;
-   }
-   .section-m1 {
-     margin: 30px 0;
-   }
+  }
+  .section-m1 {
+    margin: 30px 0;
+  }
 }
 @media (max-width: 800px) {
   .section-p1 {
     padding: 30px 60px;
-   }
-   .section-m1 {
-     margin: 30px 0;
-   }
+  }
+  .section-m1 {
+    margin: 30px 0;
+  }
 }
 @media (max-width: 700px) {
   .section-p1 {
     padding: 23px 50px;
-   }
-   .section-m1 {
-     margin: 23px 0;
-   }
+  }
+  .section-m1 {
+    margin: 23px 0;
+  }
 }
 @media (max-width: 600px) {
   .section-p1 {
     padding: 15px 30px;
-   }
-   .section-m1 {
-     margin: 15px 0;
-   }
+  }
+  .section-m1 {
+    margin: 15px 0;
+  }
 }
 @media (max-width: 500px) {
   .section-p1 {
     padding: 10px 15px;
-   }
-   .section-m1 {
-     margin: 10px 0;
-   }
-   .navebar-link {
+  }
+  .section-m1 {
+    margin: 10px 0;
+  }
+  .navebar-link {
     display: none;
-   }
-   .navebar-link li .bag {
+  }
+  .navebar-link li .bag {
     display: block;
-   }
+  }
   .mobile {
     display: flex;
     justify-content: space-between;
-   }
-   .mobile i {
+  }
+  .mobile i {
     margin-left: 10px;
     cursor: pointer;
-   }
-   @media (max-width: 710px) {
+  }
+  @media (max-width: 710px) {
     .section-p1 {
       padding: 10px 15px;
-     }
-     .section-m1 {
-       margin: 10px 0;
-     }
-     .navebar-link {
+    }
+    .section-m1 {
+      margin: 10px 0;
+    }
+    .navebar-link {
       display: none;
-     }
-     .navebar-link li .bag {
+    }
+    .navebar-link li .bag {
       display: block;
-     }
+    }
     .mobile {
       display: flex;
       justify-content: space-between;
-     }
-     .mobile i {
+    }
+    .mobile i {
       margin-left: 10px;
       cursor: pointer;
-     }
     }
-   #header {
-    background-image: url('./img/hero4.png');
+  }
+  #header {
+    background-image: url("./img/hero4.png");
     background-position: top 20% right 25%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -610,7 +609,7 @@ footer p {
     font-size: 20px;
     color: #222;
   }
- .benner-box {
+  .benner-box {
     padding: 10px;
     margin-bottom: 10px;
     min-width: 300px;
@@ -621,7 +620,7 @@ footer p {
 
 @media (max-width: 768px) {
   #header {
-    background-image: url('./img/hero4.png');
+    background-image: url("./img/hero4.png");
     background-position: top 20% right 25%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -646,7 +645,6 @@ footer p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
   }
   .sm-benner {
     display: flex;
